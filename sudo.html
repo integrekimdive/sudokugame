@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+     <link rel="stylesheet" href="sudo.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🧩 Sudoku</h1>
+        
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+        
+        <div class="controls">
+            <button onclick="newGame()">New Game</button>
+            <button onclick="checkSolution()">Check</button>
+            <button onclick="solvePuzzle()">Solve</button>
+            <button onclick="clearBoard()">Clear</button>
+        </div>
+        
+        <div class="sudoku-grid" id="sudoku-grid"></div>
+        
+        <div class="status" id="status"></div>
+    </div>
+
+  <script src="sudo.js"></script>
+</body>
+</html>
